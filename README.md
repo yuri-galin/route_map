@@ -10,9 +10,9 @@ The DB schema was predetermined.
 
 In order for the project to work you must have installed:
 - Python
-- PostgreSQL
-- Postgis
-- GDAL
+- PostgreSQL 15.2
+- Postgis 3.3.2
+- OSGeo4W (GDAL)
 - Redis
 - Git
 
