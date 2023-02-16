@@ -65,3 +65,24 @@ python manage.py runserver
 ```
 
 All done, you can find the project on http://localhost:8000/routes/map/
+
+## Project info
+
+Field "point" on Station model is auto-generated from the values of "lat" and "lon" fields. It's happening by overriding the save method and via signals.
+
+Automatic updates on the map in real time are done through websocket and django signals.
+The signals trigger on models in the following conditions:
+
+Route
+- "is_active" field changed
+- an active route has been deleted
+	
+Station
+- "lat"/"lon"/"point" field changed
+
+Stop
+- a new active stop has been created on an active route
+- "index"/"is_active"/"route"/"station" field changed
+- an active stop on an active route has been deleted
+
+When that happens, the signal send relevant information to the websocket, and map gets updated in all open tabs.
