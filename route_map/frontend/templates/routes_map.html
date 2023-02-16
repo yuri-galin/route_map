@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Routes map</title>
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=12c6c745-918c-4515-b751-7d0267d05530&lang=ru_RU" type="text/javascript">
+        </script>
+        {% load static %}
+        <script defer async src="{% static 'js/routes_map.js' %}" type="text/javascript"></script>
+        <link rel="stylesheet" href="{% static 'css/routes_map.css' %}">
+    </head>
+    <body>
+        <div id="main-container">
+            <h1 id="title">Карта маршрутов</h1>
+            <div id="select-container">
+                <select id="city-select" name="language"">
+                    {% for city in cities %}
+                        <option class="city-option" id="city_{{ city.id }}" value="{{ city.id }}">
+                            {{ city.title }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div id="map"></div>
+        </div>
+    </body>
+</html>
