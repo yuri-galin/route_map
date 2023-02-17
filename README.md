@@ -66,7 +66,7 @@ python manage.py runserver
 
 All done, you can find the project on http://localhost:8000/routes/map/
 
-## Project info
+## PROJECT INFO
 
 Field "point" on Station model is auto-generated from the values of "lat" and "lon" fields. It's happening by overriding the save method and via signals.
 
