@@ -85,4 +85,4 @@ Stop
 - "index"/"is_active"/"route"/"station" field changed
 - an active stop on an active route has been deleted
 
-When that happens, the signal send relevant information to the websocket, and map gets updated in all open tabs.
+When that happens, the signal sends relevant information to the websocket, and map gets updated in all open tabs.
