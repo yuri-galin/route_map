@@ -1,3 +1,6 @@
+[![en](https://img.shields.io/badge/lang-en-lightgreen.svg)](https://github.com/yuri-galin/route_map/blob/main/README.md)
+[![ru](https://img.shields.io/badge/lang-ru-lightblue.svg)](https://github.com/yuri-galin/route_map/blob/main/README.ru.md)
+
 ## ТРЕБОВАНИЯ
 
 Для работы проекта требуется установка:
