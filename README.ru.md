@@ -1,6 +1,14 @@
 [![en](https://img.shields.io/badge/lang-en-lightgreen.svg)](https://github.com/yuri-galin/route_map/blob/main/README.md)
 [![ru](https://img.shields.io/badge/lang-ru-lightblue.svg)](https://github.com/yuri-galin/route_map/blob/main/README.ru.md)
 
+Привет.
+
+Это проект на джанго для отображения маршрутов на карте города.
+
+Проект был выполнен в качестве тестового задания, условием которого было использование Django, WebSocket (Channels), Postgis и Yandex.Maps API.
+
+Была дана начальная схема базы данных (модели Station, Route, Stop).
+
 ## ТРЕБОВАНИЯ
 
 Для работы проекта требуется установка:
