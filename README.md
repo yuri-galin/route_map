@@ -30,12 +30,12 @@ git clone git@github.com:yuri-galin/route_map.git .
 
 Create a database and activate Postgis
 ```
-  psql -U postgres
-  CREATE USER admin WITH PASSWORD 'admin_pass';
-  CREATE DATABASE route_map OWNER admin;
-  \c route_map;
-  CREATE EXTENSION postgis;
-  \q
+psql -U postgres
+CREATE USER admin WITH PASSWORD 'admin_pass';
+CREATE DATABASE route_map OWNER admin;
+\c route_map;
+CREATE EXTENSION postgis;
+\q
 ```
 
 Then create a virtual environment and activate it.
